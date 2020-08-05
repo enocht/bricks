@@ -1,0 +1,15 @@
+{% autoescape off %}
+    Name = {{ request.firstname }} {{ request.lastname }}
+    Email = {{ request.email }}
+    Phone Number = {{ request.phonenumber }}
+    Message = {{ request.message }}
+    Courses = {{ request.courses }}
+    Budget = {{ request.budget }}
+{#    Hi {{ user.first_name }},#}
+{##}
+{#    Please click on the link to confirm your registration,#}
+{#    http://{{ domain }}{% url 'activate' uidb64=uid token=token %}#}
+
+{#    Regards,#}
+{#    The ExamBuddy Team#}
+{% endautoescape %}

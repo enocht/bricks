@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div class="airport-pickup-page">
+        <div class="page-img">
+            <img src="{% static 'bricksapp/airplane-4885803_1920.jpg' %}" width="100%" alt="">
+        </div>
+        <div class="airport-pickup-header">
+            <h2>
+                Airport Pickup
+            </h2>
+{#            <p>#}
+{#                Note: We will only list the documents generally required for study visas in most embassies. For requirements specific to each embassy, <a href="http://127.0.0.1:8000/#contact">contact us</a>.#}
+{#            </p>#}
+        </div>
+        <div class="airport-pickup-body">
+            <p>
+                When your visa has been approved, the next step is to book your flight. We help with picking up students from airports to the university to aid the smooth transportation and avoid being swindled by enthusiastic locals.
+            </p>
+            <h3>How to make a booking?</h3>
+            <p>Please send the following information to via email to <a href=mailto:briskpeople.tech@gmail.com>briskpeople.tech@gmail.com</a> at least 1 week before the flight</p>
+            <ul>
+                <li><span>Arrival airport and destination in the country</span></li>
+                <li><span>Name(s) of Passenger(s)</span></li>
+                <li><span>Number of Passengers</span></li>
+                <li><span>Email address(es)</span></li>
+                <li><span>Mobile number(s) in international format</span></li>
+                <li><span>Date & time of arrival</span></li>
+                <li><span>Flight number</span></li>
+                <li><span>Number of Bags</span></li>
+                <li><span>Scanned copy of flight details</span></li>
+            </ul>
+            <p>
+                After sending your flight details to us, those will be forwarded to the appropriate channel. After your order is confirmed, you will get a notification mail with an order number.
+            </p>
+            <p>
+                One day before arrival until 7 pm CET, you will get an e-mail and text message directly from our transport department. The message will contain exact time of picking up, details and mode of transport and also the place of picking up. Please make sure to check your spam and junk folders for their e-mail.
+            </p>
+        </div>
+    </div>
+
+{% endblock %}

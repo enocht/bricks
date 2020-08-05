@@ -1,0 +1,43 @@
+{% load static %}
+
+<nav class="navbar navbar-expand-lg navbar-light">
+    <img src="{% static 'bricksapp/unnamed.png' %}" alt="" width="150px" onclick="window.location = '{% url 'home' %}'" style="cursor: pointer;">
+    <a class="navbar-brand" href="{% url 'home' %}">
+        <h2 style="font-family: 'Courier New',serif; font-weight: bold; color: navy">BRISK</h2>
+        <p style="margin-top: -15px; font-family: Georgia,serif;color: navy; font-size: 15px">People & Technology</p>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border-color: navy;">
+        <span class="navbar-toggler-icon" style="color: yellow"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown" id="services">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: navy">
+                    Services
+                </a>
+                <div class="dropdown-menu fade-up" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="{% url 'partner_institutions' %}" style="margin-top: -8px;">University Overview</a>
+                    <a class="dropdown-item" href="{% url 'application_assistance' %}">Application Assistance</a>
+                    <a class="dropdown-item" href="{% url 'visa_embassy_view' %}">Visa & Embassy Guidance</a>
+                    <a class="dropdown-item" href="{% url 'airport_pickup' %}" style="margin-bottom: -8px; border-bottom: none">Airport Pick-Up</a>
+                </div>
+            </li>
+            <li class="nav-item active" id="nav_links">
+                <a class="nav-link" href="http://127.0.0.1:8000/#testimonials">Testimonies <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item" id="nav_links">
+                <a class="nav-link" href="http://127.0.0.1:8000/#contact">Contact Us</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<script>
+    $(function () {
+        $(document).scroll(function () {
+            var $nav = $(".navbar");
+            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        });
+    });
+</script>

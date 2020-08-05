@@ -1,0 +1,83 @@
+{% load static %}
+
+<div class="container-fluid" id="contact">
+    <h1>Get in touch</h1>
+    <p>Want to find out how Brisk can solve problems specific to your enquiry? Let's talk.</p>
+    <div class="row justify-content-md-center">
+        <div class="col-md-5" id="contact-box-1">
+            <h3>Leave your details and we will get back to you</h3>
+            <form method="POST" action="{% url 'form_success' %}">
+                {% csrf_token %}
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="FirstName">First Name</label>
+                      <input type="text" class="form-control" id="FirstName" name="FirstName" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="LastName">Last Name</label>
+                        <input type="text" class="form-control" id="LastName" name="LastName" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="Email">Email</label>
+                        <input type="email" class="form-control" id="Email" name="Email" placeholder="name@example.com" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="PhoneNumber">Phone Number</label>
+                        <input type="tel" class="form-control" id="PhoneNumber" name="PhoneNumber" placeholder="+123456789" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="message">Message (Optional)</label>
+                    <textarea class="form-control" id="message" name="message"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="courses">Course Preferences</label>
+                    <textarea class="form-control" id="courses" name="courses" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="Budget">Tuition & Living Expenses Budget in USD</label>
+                    <select class="form-control" id="Budget" name="Budget">
+                        <option value="1">$0 - $2,000</option>
+                        <option value="2">$2,001 - $5,000</option>
+                        <option value="3">$5,001 - $10,000</option>
+                        <option value="4">$10,001 - $15,000</option>
+                        <option value="5">$15,001 - $20,000</option>
+                        <option value="6">$20,001 - $30,000</option>
+                        <option value="7">$30,001 - $40,000</option>
+                        <option value="8">$40,001 - $50,000</option>
+                        <option value="9">$50,001 - $60,000</option>
+                        <option value="10">$60,001 - $70,000</option>
+                        <option value="11">$70,001 - $80,000</option>
+                        <option value="12">$80,001 - $100,000</option>
+                        <option value="13">$100,000+</option>
+                    </select>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="Terms&Condition" name="Terms&Condition" required>
+                    <label class="form-check-label" for="Terms&Condition">I confirm that i've read the <a href="#">Terms of Use</a> and agree to the use of my personal information for this service.</label>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+        <div class="col-md-5" id="contact-box-2" style="text-align: center">
+            <img src="{% static 'bricksapp/33046-5-students-learning-transparent-image.png' %}" alt="">
+            <h4 style="margin-top: 15px">Other ways to connect</h4>
+            <div class="row" style="margin-top: 0">
+                <div class="col">
+                    <p>Phone <br><a href="tel:+36202190746">+36 20 219 0746</a><br><a href="tel:+2348088211023">+234 80 8821 1023</a></p>
+                    <p>Email <br><a href=mailto:briskpeople.tech@gmail.com>briskpeople.tech@gmail.com</a></p>
+                </div>
+                <div class="col">
+                    <p>Address <br><a href="https://goo.gl/maps/zD8Kehn9Za8PXcEB8" target="_blank">7 Peter Ajuebon Street Olakitan Off Command Road. Ipaja, Lagos. Nigeria.</a></p>
+                </div>
+            </div>
+            <a href="#" style="text-align: center"><i class="fa fa-twitter-square"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-facebook-square"></i></a>
+            <a href="#"><i class="fa fa-linkedin-square"></i></a>
+        </div>
+    </div>
+</div>
+

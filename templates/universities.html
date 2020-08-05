@@ -1,0 +1,191 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="universities-page">
+        <div class="page-img">
+            <img src="{% static 'bricksapp/brown-concrete-cathedral-1130683.jpg' %}" width="100%" alt="">
+        </div>
+        <div class="universities-header">
+            <h2><i class="fa fa-graduation-cap"></i>University Overview</h2>
+        </div>
+        <div class="universities-body">
+            <h3 class="body-header">Countries we're in:</h3>
+            <div>
+{#                <ul>#}
+{#                    <li><span>United Kingdom</span></li>#}
+{#                    <li><span>Canada</span></li>#}
+{#                    <li><span>Ireland</span></li>#}
+{#                    <li><span>Hungary</span></li>#}
+{#                    <li><span>Ukraine</span></li>#}
+{#                    <li><span>Cyprus</span></li>#}
+{#                    <li><span>Finland</span></li>#}
+{#                    <li><span>Norway</span></li>#}
+{#                    and so many more#}
+{#                </ul>#}
+                <div class="row">
+                    <div class="col">
+                        <img src="{% static 'bricksapp/640px-Flag_of_the_United_Kingdom.svg.png' %}" alt="">
+                        <h4>United Kingdom</h4>
+                    </div>
+                    <div class="col">
+                        <img src="{% static 'bricksapp/Flag_of_Canada.png' %}" alt="">
+                        <h4>Canada</h4>
+                    </div>
+                    <div class="col">
+                        <img src="{% static 'bricksapp/ireland-flag-icon-free-download.jpg' %}" alt="">
+                        <h4>Ireland</h4>
+                    </div>
+                    <div class="col">
+                        <img src="{% static 'bricksapp/hungary-flag-icon-free-download.jpg' %}" alt="">
+                        <h4>Hungary</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="{% static 'bricksapp/ukraine-flag-image-free-download.jpg' %}" alt="">
+                        <h4>Ukraine</h4>
+                    </div>
+                    <div class="col">
+                        <img src="{% static 'bricksapp/finland-flag-image-free-download.jpg' %}" alt="">
+                        <h4>Finland</h4>
+                    </div>
+                    <div class="col">
+                        <img src="{% static 'bricksapp/norway-flag-icon-free-download.jpg' %}" alt="">
+                        <h4>Norway</h4>
+                    </div>
+                </div>
+                <p style="margin-left: 30px">and so many more...</p>
+            </div>
+            <h3 class="body-header">Courses</h3>
+            <div>
+                <ul>
+                    <li><span>General Medicine</span></li>
+                    <li><span>Pharmacy</span></li>
+                    <li><span>Nursing</span></li>
+                    <li><span>Business Administration</span></li>
+                    <li><span>Electrical Engineering</span></li>
+                    <li><span>Civil Engineering</span></li>
+                    <li><span>Biology</span></li>
+                    <li><span>Bio-Chemistry</span></li>
+                    and so many more...
+                </ul>
+            </div>
+            <h3 class="body-header">Requirements</h3>
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                BSC
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <ul>
+                                <li><span>Filled University Application Form</span></li>
+                                <li><span>Copy of the International Passport & Data Page</span></li>
+                                <li><span>5 Credit in Relevant Course of Interest</span></li>
+                                <li><span>Copy of High School Completion Certificate</span></li>
+                                <li><span>Payment of Application Fees (If Applicable)</span></li>
+                                <li><span>Payment of Invitation Letters</span></li>
+                                <li><span>Payment of Processing Visa & Supporting Letter</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                POSTGRADUATE/MASTERS
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <ul>
+                                <li><span>University Transcripts</span></li>
+                                <li><span>Copy of Bachelor's Certificate</span></li>
+                                <li><span>2x Recommendation letters from your processors</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                PHD/DOCTORAL PROGRAMS
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <ul>
+                                <li><span>MSC degree in relevant field</span></li>
+                                <li><span>Acceptance by a supervisor</span></li>
+                                <li><span>Doctoral school (Including a preliminary research proposal signed by the supervisor and head of the school)</span></li>
+                                <li><span>2x Recommendation letters from your professors</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+{#            <div class="row">#}
+{#                <div class="col">#}
+{#                    <img src="{% static 'bricksapp/220px-Ud-also-eng-wiki.png' %}" alt="">#}
+{#                    <h4>University of Debrecen</h4>#}
+{#                    <p>Griffith College is a leading college in Ireland offering a range of undergraduate and postgraduate courses with colleges in Dublin, Cork & Limerick</p>#}
+{#                </div>#}
+{#                <div class="col">#}
+{#                    <img src="{% static 'bricksapp/szeged-logo.png' %}" alt="">#}
+{#                    <h4>University of Szeged</h4>#}
+{#                    <p>Griffith College is a leading college in Ireland offering a range of undergraduate and postgraduate courses with colleges in Dublin, Cork & Limerick</p>#}
+{#                </div>#}
+{#                <div class="col">#}
+{#                    <img src="{% static 'bricksapp/1200px-Logo_of_the_Technical_University_of_Munich.svg.png' %}" alt="">#}
+{#                    <h4>Technical University Munich</h4>#}
+{#                    <p>Griffith College is a leading college in Ireland offering a range of undergraduate and postgraduate courses with colleges in Dublin, Cork & Limerick</p>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="row">#}
+{#                <div class="col">#}
+{#                    <img src="{% static 'bricksapp/2000px-UHH_Universität_Hamburg_Logo.svg.png' %}" alt="">#}
+{#                    <h4>University of Hamburg</h4>#}
+{#                    <p>Griffith College is a leading college in Ireland offering a range of undergraduate and postgraduate courses with colleges in Dublin, Cork & Limerick</p>#}
+{#                </div>#}
+{#                <div class="col">#}
+{#                    <img src="{% static 'bricksapp/1280px-Universität_Bonn.svg.png' %}" alt="">#}
+{#                    <h4>University of Bonn</h4>#}
+{#                    <p>Griffith College is a leading college in Ireland offering a range of undergraduate and postgraduate courses with colleges in Dublin, Cork & Limerick</p>#}
+{#                </div>#}
+{#                <div class="col">#}
+{#                    <img src="{% static 'bricksapp/as-622496449581060-1525426127694-l-thumb.png' %}" alt="">#}
+{#                    <h4>University of Cologne</h4>#}
+{#                    <p>Griffith College is a leading college in Ireland offering a range of undergraduate and postgraduate courses with colleges in Dublin, Cork & Limerick</p>#}
+{#                </div>#}
+{#            </div>#}
+{#            <div class="row">#}
+{#                <div class="col">#}
+{#                    <img src="{% static 'bricksapp/Uni_Logo_2016.jpg' %}" alt="">#}
+{#                    <h4>University of Vienna</h4>#}
+{#                    <p>Griffith College is a leading college in Ireland offering a range of undergraduate and postgraduate courses with colleges in Dublin, Cork & Limerick</p>#}
+{#                </div>#}
+{#                <div class="col">#}
+{#                    <img src="{% static 'bricksapp/Universität_Salzburg_-_Logo.svg.png' %}" alt="">#}
+{#                    <h4>University of Salzburg</h4>#}
+{#                    <p>Griffith College is a leading college in Ireland offering a range of undergraduate and postgraduate courses with colleges in Dublin, Cork & Limerick</p>#}
+{#                </div>#}
+{#                <div class="col">#}
+{#                    <img src="{% static 'bricksapp/14dd883d4724a0617dcc3d0140d63015.png' %}" alt="">#}
+{#                    <h4>University of Oslo</h4>#}
+{#                    <p>Griffith College is a leading college in Ireland offering a range of undergraduate and postgraduate courses with colleges in Dublin, Cork & Limerick</p>#}
+{#                </div>#}
+{#            </div>#}
+{#            <p id="and-more">and more partnerships coming up...</p>#}
+
+        </div>
+    </div>
+{% endblock %}

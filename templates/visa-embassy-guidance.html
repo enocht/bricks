@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div class="visa-embassy-guidance-page">
+        <div class="page-img">
+            <img src="{% static 'bricksapp/passport-3127927_1920.jpg' %}" width="100%" alt="">
+        </div>
+        <div class="visa-embassy-guidance-page-header">
+            <h2>
+            Visa Requirements
+            </h2>
+            <p>
+                Note: We will only list the documents generally required for study visas in most embassies. For requirements specific to each embassy, <a href="http://127.0.0.1:8000/#contact">contact us</a>.
+            </p>
+        </div>
+        <div class="visa-embassy-guidance-page-body">
+            <ul>
+                <li><span>Application form</span></li>
+                <li><span>International passport valid for at least a year</span></li>
+                <li><span>Copy of passport data page</span></li>
+                <li><span>Copy of School leaving certificate</span></li>
+                <li><span>Birth Certificate</span></li>
+                <li><span>Admission Letter or Letter of Invitation from the school</span></li>
+                <li><span>Medical certificate issued within one month of visa application</span></li>
+                <li><span>Proof of Insurance</span></li>
+                <li><span>Bank statement from the sponsor to prove financial ability to bear the student's expenses throughout his/her stay in the country</span></li>
+                <li><span>Passport Photographs taken not more six months before the visa application</span></li>
+                <li><span>Proof of payment of Visa Processing Fee</span></li>
+                <li><span>Proof of Accommodation in the proposed country</span></li>
+                <li><span>Proof of Payment of Tuition Fees</span></li>
+            </ul>
+        </div>
+    </div>
+
+{% endblock %}

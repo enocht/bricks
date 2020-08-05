@@ -1,0 +1,119 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div>
+        <div style="position: relative;" id="index-header">
+            <img src="{% static 'bricksapp/woman-wearing-black-graduation-coat-sits-on-stairs-901962.jpg' %}" width="100%" alt="">
+            <div class="carousel-text">
+                <h1>High Quality Education at Affordable Fees</h1>
+                <p>We will guide you to top ranked universities which are recognized all around the world. Our Universities are affordable with good quality education and good job prospects after studies</p>
+                <a href="http://127.0.0.1:8000/#contact"><button class="btn">SPEAK TO US</button></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="how-we-can-help">
+        <div class="row">
+            <div class="col-6" id="how-we-can-help-list-left">
+                <h2>
+                    University Requirements
+                </h2>
+                <p>
+                    Get to know what documents universities generally ask from students
+                </p>
+                <a href="{% url 'partner_institutions' %}"><button class="btn">READ MORE >></button></a>
+                <svg viewBox="0 0 16 16" class="bi bi-building" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694L1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z"></path>
+                    <path d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z"></path>
+                </svg>
+            </div>
+            <div class="col-6" style="padding: 0">
+                <img id="how-we-can-help-left-img" src="{% static 'bricksapp/building-in-city-against-sky-256490.jpg' %}" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <img id="how-we-can-help-right-img" src="{% static 'bricksapp/person-holding-gray-twist-pen-and-white-printer-paper-on-955389.jpg' %}" alt="">
+            </div>
+            <div class="col-6" id="how-we-can-help-list-right">
+                <h2>
+                    Application Assistance
+                </h2>
+                <p>
+                    Be guided through your application process
+                </p>
+                <a href="{% url 'application_assistance' %}"><button class="btn">READ MORE >></button></a>
+                <svg viewBox="0 0 16 16" class="bi bi-newspaper" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M0 2A1.5 1.5 0 0 1 1.5.5h11A1.5 1.5 0 0 1 14 2v12a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 0 14V2zm1.5-.5A.5.5 0 0 0 1 2v12a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5V2a.5.5 0 0 0-.5-.5h-11z"></path>
+                    <path fill-rule="evenodd" d="M15.5 3a.5.5 0 0 1 .5.5V14a1.5 1.5 0 0 1-1.5 1.5h-3v-1h3a.5.5 0 0 0 .5-.5V3.5a.5.5 0 0 1 .5-.5z"></path>
+                    <path d="M2 3h10v2H2V3zm0 3h4v3H2V6zm0 4h4v1H2v-1zm0 2h4v1H2v-1zm5-6h2v1H7V6zm3 0h2v1h-2V6zM7 8h2v1H7V8zm3 0h2v1h-2V8zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1z"></path>
+                </svg>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6" id="how-we-can-help-list-left">
+                <h2>
+                    Visa & Embassy Guidance
+                </h2>
+                <p>
+                    Maximise your chances of being granted a visa
+                </p>
+                <a href="{% url 'visa_embassy_view' %}"><button class="btn">READ MORE >></button></a>
+                <svg viewBox="0 0 16 16" class="bi bi-building" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694L1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z"></path>
+                    <path d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z"></path>
+                </svg>
+            </div>
+            <div class="col-6" style="padding: 0">
+                <img id="how-we-can-help-left-img" src="{% static 'bricksapp/jet-cloud-landing-aircraft-46148.jpg' %}" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <img id="how-we-can-help-right-img" src="{% static 'bricksapp/brown-leather-duffel-bag-1058959.jpg' %}" alt="">
+            </div>
+            <div class="col-6" id="how-we-can-help-list-right">
+                <h2>
+                    Airport Pickup
+                </h2>
+                <p>
+                    Get support all the way to your first day at University.
+                </p>
+                <a href="{% url 'airport_pickup' %}"><button class="btn">READ MORE >></button></a>
+                <svg viewBox="0 0 16 16" class="bi bi-newspaper" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M0 2A1.5 1.5 0 0 1 1.5.5h11A1.5 1.5 0 0 1 14 2v12a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 0 14V2zm1.5-.5A.5.5 0 0 0 1 2v12a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5V2a.5.5 0 0 0-.5-.5h-11z"></path>
+                    <path fill-rule="evenodd" d="M15.5 3a.5.5 0 0 1 .5.5V14a1.5 1.5 0 0 1-1.5 1.5h-3v-1h3a.5.5 0 0 0 .5-.5V3.5a.5.5 0 0 1 .5-.5z"></path>
+                    <path d="M2 3h10v2H2V3zm0 3h4v3H2V6zm0 4h4v1H2v-1zm0 2h4v1H2v-1zm5-6h2v1H7V6zm3 0h2v1h-2V6zM7 8h2v1H7V8zm3 0h2v1h-2V8zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1z"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+{#    <div class="container-fluid">#}
+{#        <h2>Guide</h2>#}
+{##}
+{#    </div>#}
+
+    {% include 'testimonials.html' %}
+
+    {% include 'contact.html' %}
+
+    <script>
+        $(function() {
+
+            var $btn = $('#btnTop');
+            var $home = $('#carouselTestimonials');
+            var startpoint = $home.scrollTop() + $home.height();
+
+            $(window).on('scroll', function() {
+                if($(window).scrollTop() > startpoint) {
+                    $btn.show();
+                } else {
+                    $btn.hide();
+                }
+            });
+        });
+    </script>
+
+{% endblock %}
